@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Check-in de Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body class="body-cv">
+
+    <div id="particles-js"></div>
+
+    <div id="menu"></div>
+
+    <h1>Check-in de Hotel</h1>
+
+    <div class="form-container">
+        <form id="checkin-form">
+            
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome">
+                <small class="error-message">Mensagem de erro</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email">
+                <small class="error-message">Mensagem de erro</small>
+            </div>
+
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="checkin-date">Data de Check-in</label>
+                    <input type="date" id="checkin-date" name="checkin-date">
+                    <small class="error-message">Mensagem de erro</small>
+                </div>
+                <div class="form-group">
+                    <label for="checkout-date">Data de Check-out</label>
+                    <input type="date" id="checkout-date" name="checkout-date">
+                    <small class="error-message">Mensagem de erro</small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-quarto">Tipo de Quarto</label>
+                <select id="tipo-quarto" name="tipo-quarto">
+                    <option value="standard">Standard</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suíte</option>
+                </select>
+            </div>
+
+            <div id="form-message"></div>
+
+            <button type="submit" class="form-button">Fazer Reserva</button>
+            
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/checkin.js" defer></script>
+
+</body>
+</html>
